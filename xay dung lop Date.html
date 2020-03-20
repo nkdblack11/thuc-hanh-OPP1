@@ -10,15 +10,6 @@
         this.day = day;
         this.month = month;
         this.year = year;
-        this.setDay = function (day) {
-            this.day = day;
-        }
-        this.setMonth = function (month) {
-            this.month = month;
-        }
-        this.setYear = function (year) {
-            this.year = year;
-        }
         this.setDate = function (day, month, year) {
             this.day = day;
             this.month = month;
@@ -28,11 +19,9 @@
             return this.day + "-" + this.month + "-" + this.year;
         }
     }
-    let date = new MyDate();
-    date.setDay(12);
-    date.setMonth(12);
-    date.setYear(1994);
-   document.write('<h1>' + date + '</h1>' )
+    let date = new MyDate(15, 12, 1994);
+    date.setDate(20,3,2020)
+    document.write('<h1>' + date + '</h1>')
 
 </script>
 </body>
